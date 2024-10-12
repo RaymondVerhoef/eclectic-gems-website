@@ -1,0 +1,1 @@
+console.log('Eclectic Gems website is live!');
