@@ -1,33 +1,36 @@
 /* General Styles */
 body {
-    font-family: 'Quattrocento Sans', sans-serif;
-    background-color: #FFDDC1; /* Light Peach for fun and light vibe */
+    font-family: 'Orbitron', sans-serif; /* Tech-style font */
+    background-color: #1F1F1F; /* Dark, futuristic background */
     margin: 0;
     padding: 0;
-    color: #690108; /* Dark Red for text */
+    color: #F0A500; /* Neon yellow text inspired by the image */
     text-align: center;
 }
 
 header {
-    background-color: #F0A500; /* Golden background for header */
-    color: white;
+    background-color: #222831; /* Dark gray for header */
+    color: #F0A500;
     padding: 20px;
+    border-bottom: 4px solid #00ADB5; /* Neon blue border */
 }
 
 h1 {
-    font-family: 'Tenor Sans', sans-serif;
     font-size: 36px;
+    text-transform: uppercase;
+    color: #F0A500; /* Bright yellow for the header */
 }
 
 p {
     font-size: 18px;
+    color: #EEEEEE; /* Light text for readability */
 }
 
 #countdown {
     margin: 20px 0;
     font-size: 24px;
     font-weight: bold;
-    color: #3D5A80; /* Deep Ocean Blue for contrast */
+    color: #00ADB5; /* Neon blue for countdown */
 }
 
 .mission-graphics img, .fun-icons img {
@@ -36,42 +39,62 @@ p {
 
 /* Section Styles */
 section {
-    padding: 20px;
+    padding: 30px;
 }
 
 #mission {
-    background-color: #690108; /* Dark Red for mission section */
-    color: white;
-    padding: 30px;
+    background-color: #393E46; /* Dark background for mission section */
+    color: #EEEEEE;
+    border-top: 4px solid #00ADB5;
 }
 
 #rsvp {
-    background-color: #F7F7F7; /* Soft White */
-    padding: 30px;
+    background-color: #222831;
+    color: #F0A500;
+    border-top: 4px solid #00ADB5;
 }
 
 .rsvp-button {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #F0A500;
-    color: white;
+    padding: 15px 25px;
+    background-color: #00ADB5; /* Bright neon blue */
+    color: #222831;
     text-decoration: none;
     font-size: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .rsvp-button:hover {
-    background-color: #FFDDC1;
+    background-color: #F0A500; /* Neon yellow on hover */
 }
 
 #details {
-    background-color: #3D5A80; /* Deep Ocean Blue */
-    color: white;
-    padding: 30px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    border-top: 4px solid #00ADB5;
 }
 
 footer {
     padding: 20px;
-    background-color: #690108;
-    color: white;
+    background-color: #222831;
+    color: #F0A500;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav .nav-links {
+        display: none;
+    }
+
+    .gallery-images {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
 }
