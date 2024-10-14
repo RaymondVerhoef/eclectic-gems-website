@@ -1,159 +1,77 @@
 /* General Styles */
 body {
-    font-family: 'Quattrocento', serif;
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #FFDDC1; /* Light Peach for fun and light vibe */
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #F7F7F7; /* Soft White background */
-    color: #3D5A80; /* Deep Ocean Blue for body text */
+    color: #690108; /* Dark Red for text */
+    text-align: center;
 }
 
 header {
-    background: #690108; /* Dark Red for header */
+    background-color: #F0A500; /* Golden background for header */
     color: white;
     padding: 20px;
-    text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
+h1 {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 36px;
 }
 
-.logo {
+p {
+    font-size: 18px;
+}
+
+#countdown {
+    margin: 20px 0;
     font-size: 24px;
-    font-family: 'Tenor Sans', sans-serif; /* Sans-serif for titles */
+    font-weight: bold;
+    color: #3D5A80; /* Deep Ocean Blue for contrast */
 }
 
-.nav-links {
-    list-style: none;
-    display: flex;
+.mission-graphics img, .fun-icons img {
+    margin: 10px;
 }
 
-.nav-links li {
-    margin: 0 15px;
+/* Section Styles */
+section {
+    padding: 20px;
 }
 
-.nav-links a {
+#mission {
+    background-color: #690108; /* Dark Red for mission section */
+    color: white;
+    padding: 30px;
+}
+
+#rsvp {
+    background-color: #F7F7F7; /* Soft White */
+    padding: 30px;
+}
+
+.rsvp-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #F0A500;
     color: white;
     text-decoration: none;
-    font-size: 18px;
-    font-family: 'Quattrocento Sans', sans-serif; /* Sans-serif for nav links */
+    font-size: 20px;
+    border-radius: 5px;
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
+.rsvp-button:hover {
+    background-color: #FFDDC1;
 }
 
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-}
-
-/* Hero Section */
-.hero {
-    background: url('A_visually_striking_image_combining_elements_of_mu.png') no-repeat center center/cover;
-    height: 100vh;
+#details {
+    background-color: #3D5A80; /* Deep Ocean Blue */
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    padding: 30px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    font-family: 'Tenor Sans', sans-serif;
-}
-
-.hero p {
-    font-size: 24px;
-}
-
-/* About Section */
-.about, .gallery, .contact {
-    padding: 50px;
-    text-align: center;
-}
-
-.about h2, .gallery h2, .contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #690108; /* Dark Red for section titles */
-    font-family: 'Tenor Sans', sans-serif; /* Sans-serif for headings */
-}
-
-/* Gallery */
-.gallery-images {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.gallery-images img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Contact Form */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input, textarea {
-    width: 300px;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #F0A500; /* Gold for buttons */
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-family: 'Quattrocento Sans', sans-serif;
-}
-
-button:hover {
-    background-color: #FFDDC1; /* Light Peach on hover */
-}
-
-/* Footer */
 footer {
-    background: #690108; /* Dark Red */
-    color: white;
     padding: 20px;
-    text-align: center;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-    nav .nav-links {
-        display: none;
-    }
-
-    .burger {
-        display: block;
-    }
-
-    .gallery-images {
-        flex-direction: column;
-    }
-
-    .hero h1 {
-        font-size: 32px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
+    background-color: #690108;
+    color: white;
 }
